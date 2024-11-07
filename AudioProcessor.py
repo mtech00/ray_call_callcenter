@@ -16,8 +16,8 @@ class AudioProcessor:
         print("Model loading started", datetime.datetime.now())
         self.model = whisperx.load_model("tiny", self.device, compute_type=self.compute_type)
         self.diarize_model = whisperx.DiarizationPipeline(
-            use_auth_token="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",
-            device=torch.device('cpu'),  # Use CPU for Ray compatibility
+            use_auth_token="YOUR_HUGGINGFART_TOKEN_IS_HERE",
+            device=torch.device('cpu'),  # Use CPU for Ray compatibility about CPU based virtual machines
             model_name="pyannote/speaker-diarization"
         )
 
